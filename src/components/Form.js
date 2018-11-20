@@ -1,4 +1,5 @@
 import React from "react";
+import List from "./List";
 
 class Form extends React.Component {
   state = {
@@ -15,9 +16,13 @@ class Form extends React.Component {
 
   onSubmit = e => {
     e.preventDefault();
-    this.setState({
-      todos: [...this.state.todos, this.state.input]
-    });
+    this.setState(
+      {
+        todos: [...this.state.todos, this.state.input],
+        input: ""
+      },
+      console.log(this.state.todos)
+    );
   };
   render() {
     return (
@@ -32,10 +37,9 @@ class Form extends React.Component {
               onChange={this.handleChange}
             />
           </label>
-          <input type="submit" value="Submit" />
         </form>
 
-        <ul />
+        <List todos={this.state.todos} />
       </>
     );
   }
