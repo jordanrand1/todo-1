@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Form from "./components/Form";
+import "semantic-ui-css/semantic.min.css";
 
 import "./styles.css";
 
