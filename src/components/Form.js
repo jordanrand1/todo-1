@@ -40,10 +40,10 @@ class Form extends React.Component {
       <>
         <form onSubmit={this.onSubmit}>
           <label>
-            Todo:
             <Input
               type="text"
               name="name"
+              placeholder="Todo"
               value={this.state.input}
               onChange={this.handleChange}
             />
