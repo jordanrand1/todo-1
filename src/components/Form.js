@@ -45,7 +45,6 @@ class Form extends React.Component {
             placeholder="Todo"
             value={this.state.input}
             onChange={this.handleChange}
-            style={{ zIndex: -1 }}
           />
           <Button
             circular
