@@ -6,7 +6,7 @@ const ListView = props => (
     {props.todos.map((todo, index) => (
       <List.Item>
         <List.Content floated="right">
-          <Button red onClick={() => props.delete(index)}>
+          <Button color="red" onClick={() => props.delete(index)}>
             Delete
           </Button>
         </List.Content>
