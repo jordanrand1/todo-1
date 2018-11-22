@@ -39,21 +39,21 @@ class Form extends React.Component {
     return (
       <>
         <form onSubmit={this.onSubmit}>
-          <label>
-            <Input
-              type="text"
-              name="name"
-              placeholder="Todo"
-              value={this.state.input}
-              onChange={this.handleChange}
-            />
-          </label>
+          <Input
+            type="text"
+            name="name"
+            placeholder="Todo"
+            value={this.state.input}
+            onChange={this.handleChange}
+            style={{ zIndex: -1 }}
+          />
           <Button
             circular
             positive
             icon="plus"
             size="massive"
             onClick={this.onSubmit}
+            style={{ marginLeft: "-20px" }}
           />
         </form>
 
