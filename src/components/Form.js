@@ -1,6 +1,6 @@
 import React from "react";
 import ListView from "./ListView";
-import { Input } from "semantic-ui-react";
+import { Input, Button, Icon } from "semantic-ui-react";
 
 class Form extends React.Component {
   state = {
@@ -48,6 +48,13 @@ class Form extends React.Component {
               onChange={this.handleChange}
             />
           </label>
+          <Button
+            circular
+            positive
+            icon="plus"
+            size="massive"
+            onClick={this.onSubmit}
+          />
         </form>
 
         <ListView todos={this.state.todos} delete={this.delete} />
